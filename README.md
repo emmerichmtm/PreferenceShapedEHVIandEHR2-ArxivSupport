@@ -1,27 +1,59 @@
-# Preference-shaped expected hypervolume and R2 improvement acquisition functions
+# Preference-Shaped Expected Hypervolume and R2 Improvement
+## Reference acquisition functions for preference-guided Bayesian multiobjective optimization
+
+Author: Michael T. M. Emmerich
+
+Associated presentation and report:
+
+  Shaping Expected Hypervolume and R2 Improvement
+  for Decision Maker Preferences:
+  Exact Integration, Pareto Compatibility, and Variance Monotonicity
+
+  International Conference on Multiple Criteria Decision Making
+  Bergische Universitaet Wuppertal, Germany
+  May 25, 2026
+
+Links:
+
+  arXiv:
+  https://arxiv.org/abs/2605.28746
+
+  Slides:
+  https://emmerix.net/wp-content/uploads/2026/05/wuppertal2026shapingehviander2islides.pdf
 
 
-Michael Emmerich: 
-"Shaping Expected Hypervolume and R2 Improvement for Decision Maker Preferences 
-Exact Integration, Pareto Compatibility, and Variance Monotonicity" 
-Intl. Conference on Multiple Criteria Decision Making, Bergische Universität Wuppertal, Germany, May 25th 2026.
-https://arxiv.org/abs/2605.28746
-https://emmerix.net/wp-content/uploads/2026/05/wuppertal2026shapingehviander2islides.pdf
+Overview
+--------
 
-This small reference implementation accompanies the arXiv development of
-preference-shaped expected indicator improvement.  It implements transparent
-Python routines for the acquisition functions in the comparison table:
+This repository contains a small reference implementation accompanying the
+arXiv development of preference-shaped expected indicator improvement.
 
-- canonical two-objective EHVI under independent Gaussian objectives;
-- product-kernel / desirability-shaped EHVI using aspiration and reservation levels;
-- cone-based EHVI via a simplicial cone transformation;
-- discrete R2 improvement and ER2I in achievement space;
-- exact/integral R2 ER2I in two objectives via quadrature under an independent objective-space Gaussian predictive distribution;
-- Monte Carlo checks for the deterministic quadrature routines.
+The code implements transparent Python routines for the acquisition functions
+appearing in the comparison table of the paper and slides:
 
-The implementation is intentionally explicit and theorem-oriented.  It is meant
-as a reference artifact, not as an optimized Bayesian optimization package.
+  * canonical two-objective EHVI under independent Gaussian objectives;
 
+  * product-kernel / desirability-shaped EHVI using aspiration and
+    reservation levels;
+
+  * cone-based EHVI via a simplicial cone transformation;
+
+  * discrete R2 improvement and ER2I in achievement space;
+
+  * exact / integral R2 ER2I in two objectives, computed by quadrature under
+    an independent objective-space Gaussian predictive distribution;
+
+  * Monte Carlo checks for the deterministic quadrature routines.
+
+
+Purpose
+-------
+
+The implementation is intentionally explicit and theorem-oriented.
+
+It is meant as a reference artifact for checking formulas, reproducing small
+examples, and comparing acquisition functions.  It is not intended to be an
+optimized Bayesian optimization package.
 ## Convention
 
 All objective-space routines use **minimization**.  Smaller objective values are
