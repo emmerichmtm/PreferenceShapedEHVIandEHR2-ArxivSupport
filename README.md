@@ -1,6 +1,8 @@
-# Preference-shaped expected hypervolume and R2 improvement acquisitions
+# Preference-shaped expected hypervolume and R2 improvement acquisition functions
+https://arxiv.org/abs/2605.28746
 
-This small reference implementation accompanies the JMLR/arXiv development of
+
+This small reference implementation accompanies the arXiv development of
 preference-shaped expected indicator improvement.  It implements transparent
 Python routines for the acquisition functions in the comparison table:
 
@@ -298,6 +300,16 @@ Run:
 ```bash
 python weighted_hv_kernel_examples_3d4d.py
 ```
+REFERENCE
+@misc{emmerich2026preferenceshapedexpectedhypervolumer2,
+      title={Preference-Shaped Expected Hypervolume and R2 Improvement: Exact Computation and Monotonicity}, 
+      author={Michael T. M. Emmerich},
+      year={2026},
+      eprint={2605.28746},
+      archivePrefix={arXiv},
+      primaryClass={math.OC},
+      url={https://arxiv.org/abs/2605.28746}, 
+}
 
 The example script computes product-kernel weighted HV and weighted HVI by transforming objective vectors into desirability coordinates and then computing anchored hypervolume. It also performs Monte Carlo checks in desirability space and estimates product-kernel weighted EHVI by sampling an independent objective-space Gaussian.
 
