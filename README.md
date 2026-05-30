@@ -1,4 +1,6 @@
 # Preference-shaped expected hypervolume and R2 improvement acquisitions
+Supporting implementations for:
+https://arxiv.org/abs/2605.28746
 
 This small reference implementation accompanies the JMLR/arXiv development of
 preference-shaped expected indicator improvement.  It implements transparent
@@ -284,3 +286,13 @@ expected hypervolume and R2 improvement.  The formulas follow the notation of
 that manuscript: EHVI is treated through hypervolume geometry, while exact R2
 improvement is treated through scalarization-envelope or Tchebycheff-shadow
 geometry.
+
+@misc{emmerich2026preferenceshapedexpectedhypervolumer2,
+      title={Preference-Shaped Expected Hypervolume and R2 Improvement: Exact Computation and Monotonicity}, 
+      author={Michael T. M. Emmerich},
+      year={2026},
+      eprint={2605.28746},
+      archivePrefix={arXiv},
+      primaryClass={math.OC},
+      url={https://arxiv.org/abs/2605.28746}, 
+}
