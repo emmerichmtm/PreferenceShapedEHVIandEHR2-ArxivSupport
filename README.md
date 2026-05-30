@@ -1,4 +1,4 @@
-# Preference-shaped expected hypervolume and R2 improvement acquisitions
+# Preference-shaped expected hypervolume and R2 improvement acquisition functions
 Supporting implementations for:
 https://arxiv.org/abs/2605.28746
 
