@@ -1,6 +1,12 @@
 # Preference-shaped expected hypervolume and R2 improvement acquisition functions
-https://arxiv.org/abs/2605.28746
 
+
+Michael Emmerich: 
+"Shaping Expected Hypervolume and R2 Improvement for Decision Maker Preferences 
+Exact Integration, Pareto Compatibility, and Variance Monotonicity" 
+Intl. Conference on Multiple Criteria Decision Making, Bergische Universität Wuppertal, Germany, May 25th 2026.
+https://arxiv.org/abs/2605.28746
+https://emmerix.net/wp-content/uploads/2026/05/wuppertal2026shapingehviander2islides.pdf
 
 This small reference implementation accompanies the arXiv development of
 preference-shaped expected indicator improvement.  It implements transparent
